@@ -13,6 +13,7 @@ Architettura:
     V: "business logic layer" gestisce req/res HTTP. Dispone della logica per sapere a quali dati accedere, tramite models, e delegare la formattazione ai templates
 
 Installazione venv django:
+'''
     PS E:\dev\django> powershell -ep bypass
     Windows PowerShell
     Copyright (C) Microsoft Corporation. Tutti i diritti riservati.
@@ -21,8 +22,9 @@ Installazione venv django:
 
     PS E:\dev\django> .\django_env\Scripts\Activate.ps1
     (django_env) PS E:\dev\django> pip install django
-
+'''
 Creazione progetto:
+'''
     (django_env) PS E:\dev\django> django-admin startproject lab 
     (django_env) PS E:\dev\django> ls
 
@@ -33,18 +35,20 @@ Creazione progetto:
     d-----        31/01/2025     14:30                django_env
     d-----        31/01/2025     14:33                lab
     -a----        31/01/2025     14:24            661 note.txt
-
+'''
     manage.py:
         script da cui vengono lanciati comandi di tipo amministrativo come
-
+'''
         (django_env) PS E:\dev\django\lab> python .\manage.py runserver
-
+'''
 File di progetto:
     init.py:
         file vuoto che informa django di trattare la cartella in cui risiede come package
 
     Creazione di una app:
+        '''
         PS E:\dev\django\lab> python .\manage.py startapp test_app
+        '''
         apps.py:
             configurazioni specifiche per l'applicazione
         models.py:
