@@ -66,6 +66,8 @@ Gestisce la corrispondenza tra quanto scrivo in models.py ed il contenuto dentro
         + Create model Journalist
         + Create model Article
 
+
+
     (venv) PS E:\dev\django\dl_2\django_l2> python .\manage.py sqlmigrate news 0001
     BEGIN;
     --
@@ -78,6 +80,8 @@ Gestisce la corrispondenza tra quanto scrivo in models.py ed il contenuto dentro
     CREATE TABLE "news_article" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "title" varchar(50) NOT NULL, "content" text NOT NULL, "journalist_id" bigint NOT NULL REFERENCES "news_journalist" ("id") DEFERRABLE INITIALLY DEFERRED);
     CREATE INDEX "news_article_journalist_id_97044b2f" ON "news_article" ("journalist_id");
     COMMIT;
+
+
 
     (venv) PS E:\dev\django\dl_2\django_l2> python .\manage.py migrate
     Operations to perform:
