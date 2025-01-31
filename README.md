@@ -66,7 +66,7 @@ Gestisce la corrispondenza tra quanto scrivo in models.py ed il contenuto dentro
         + Create model Journalist
         + Create model Article
 
-
+Stampa del codice corrispondente (non è una esecuzione, solo la lista dei comandi che viene eseguita con migrate)
 
     (venv) PS E:\dev\django\dl_2\django_l2> python .\manage.py sqlmigrate news 0001
     BEGIN;
@@ -81,7 +81,7 @@ Gestisce la corrispondenza tra quanto scrivo in models.py ed il contenuto dentro
     CREATE INDEX "news_article_journalist_id_97044b2f" ON "news_article" ("journalist_id");
     COMMIT;
 
-
+Crea effettivamente le entità dentro al db
 
     (venv) PS E:\dev\django\dl_2\django_l2> python .\manage.py migrate
     Operations to perform:
