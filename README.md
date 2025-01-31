@@ -61,10 +61,10 @@ Tipicamente non vengono aggiunti gli url delle varie app direttamente nel file u
 Gestisce la corrispondenza tra quanto scrivo in models.py ed il contenuto dentro al db
 
     (venv) PS E:\dev\django\dl_2\django_l2> python .\manage.py makemigrations
-Migrations for 'news':
-  news\migrations\0001_initial.py
-    + Create model Journalist
-    + Create model Article
+    Migrations for 'news':
+    news\migrations\0001_initial.py
+        + Create model Journalist
+        + Create model Article
 
     (venv) PS E:\dev\django\dl_2\django_l2> python .\manage.py sqlmigrate news 0001
     BEGIN;
