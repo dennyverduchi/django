@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+</head>
+<body>
+    <h1>Hello world!</h1>
+    <h2>Queryset:</h2>
+    {{ articles }}
+    <br>
+    {{ journalists }}
+    <hr>
+    {% for a in articles %}
+        <p>Titolo: {{ a.title }}</p>
+        <p>Contenuto: {{ a.content }}</p>
+        <p>Giornalista: {{ a.journalist }}</p>
+        <br>
+    {% endfor %}
+    <hr>
+    {% for j in journalists %}
+        <p>Nome: {{ j.first_name }}</p>
+        <p>Cognome: {{ j.last_name }}</p>
+        <p>Articoli:
+            {% for a in j.articles.all %}
+                {{ a.title }},
+            {% endfor %}
+        </p>
+        <br>
+    {% endfor %}
+</body>
+</html>

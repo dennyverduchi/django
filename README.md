@@ -106,3 +106,11 @@ Crea effettivamente le entità dentro al db
     Applying auth.0012_alter_user_first_name_max_length... OK
     Applying news.0001_initial... OK
     Applying sessions.0001_initial... OK
+
+# ORM
+I servizi CRUD sono gestiti da API
+https://docs.djangoproject.com/en/5.1/topics/db/queries/
+
+# Templates
+Documenti su cui è possibile scrivere il codice HTML, evitando così di scriverlo direttamente dentro le views.py
+https://docs.djangoproject.com/en/5.1/topics/templates/
